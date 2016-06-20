@@ -7,10 +7,10 @@ After=syslog.target
 WantedBy=multi-user.target
 
 [Service]
-#User=redisU
-User=root
+User=redisU
+#User=root
 Group=caiex
-Type=forking
+#Type=forking
 
 # Start main service
 ExecStart=/opt/rclocal/redis_26479_upstart.sh
